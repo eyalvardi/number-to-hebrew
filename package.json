@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start-demo": "ng serve number-to-hebrew-demo",
-    "build-number-to-hebrew": "ng build number-to-hebrew",
+    "build-number-to-hebrew": "ng build --watch number-to-hebrew",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

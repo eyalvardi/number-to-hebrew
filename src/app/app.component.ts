@@ -35,14 +35,6 @@ import { CheckComponent } from './check.component';
                 <br><br>
                 <check [valueNum]="valueToText()" />
                 <hr>
-                טריליון : {{ numbersToText.debugParts.trillionsText }}<br>
-                ביליון   : {{ numbersToText.debugParts.billonsText }}<br>
-                מיליון   : {{ numbersToText.debugParts.milionsText }}<br>
-                אלפים : {{ numbersToText.debugParts.thousandsText }}<br>
-                מאות : {{ numbersToText.debugParts.hundredsText }}<br>
-                עשרות : {{ numbersToText.debugParts.tensText }}<br>
-                אחדות : {{ numbersToText.debugParts.onesText }}<br>
-                <hr>
                 <h2>בדיקה רנדומלית</h2>
 
                 <hr>
