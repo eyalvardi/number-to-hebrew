@@ -37,6 +37,7 @@
       }
     },
     "demo": {
+      "projectType": "application",
       "root": "./src",
       "sourceRoot": "src",
       "prefix": "app",
@@ -47,7 +48,9 @@
             "outputPath": "dist/number-to-hebrew-demo",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -56,7 +59,12 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {

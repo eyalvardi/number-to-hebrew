@@ -131,7 +131,6 @@ export class NumbersToHebrewService {
       }
     }
   }
-
   private translatePoint(number:number): string {
     const getWords = this.getWords.bind(this);
     if (number < 10) {
@@ -139,19 +138,19 @@ export class NumbersToHebrewService {
       if (number === 2) {
         n = 'שתי';
       } else {
-        n = NUMBERS[number];
+        n = PENNIES[number];
       }
       return n;
     } else if (number == 10) {
       return 'עשר';
     } else if (number < 20) {
-      const dec = DECADES[getWords(number, 10)];
-      const num = number % 10 === 2 ? 'שניים' : NUMBERS[number % 10];
+      const dec = 'עשרה'; //DECADES[getWords(number, 10)];
+      const num = number % 10 === 2 ? 'שתיים' : PENNIES[number % 10];
       return num === 'אפס' ? `${dec}` : `${num} ${dec}`;
     } else if (number < 100) {
       const dec = DECADES[getWords(number, 10)];
-      const num = NUMBERS[number % 10];
-      return num === 'אפס' ? `${dec}` : `${dec} ${num}`;
+      const num = number % 10 === 2 ? 'שתיים' : PENNIES[number % 10];
+      return num === 'אפס' ? `${dec}` : `${dec} ו${num}`;
     }
     return "";
   }
