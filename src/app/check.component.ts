@@ -6,29 +6,30 @@ import { NumbersToHebrewService } from 'number-to-hebrew';
     selector: 'check',
     standalone: true,
     styles: [`
-        .check {
-            background-image: url("../assets/img.png");
-            background-size: 500px 251px;
-            width: 500px;
-            height: 251px;
-        }
-        .check-values{
-            display: grid;
-            grid-template-columns: 147px 500px;
-            margin-top: 132px;
-            margin-right: 30px;
-            position: absolute;
-        }
+      .check {
+        background-image: url("../assets/img.png");
+        background-size: 500px 251px;
+        width: 500px;
+        height: 251px;
+      }
+
+      .check-values {
+        display: grid;
+        grid-template-columns: 147px 500px;
+        margin-top: 132px;
+        margin-right: 30px;
+        position: absolute;
+      }
 
 
-        .check-text {
-            font: 14px Arial, sans-serif;
-        }
+      .check-text {
+        font: 14px Arial, sans-serif;
+      }
 
-        .check-value {
-            font: 14px Arial, sans-serif;
+      .check-value {
+        font: 14px Arial, sans-serif;
 
-        }
+      }
     `],
     imports: [
         DecimalPipe
