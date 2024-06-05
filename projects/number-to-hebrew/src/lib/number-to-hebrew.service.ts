@@ -112,7 +112,7 @@ export class NumbersToHebrewService {
           return  'ביליון' + ' ' + rightText;
         }
         else if(leftNum === 2){
-          return 'שני מיליארד' + 'ו ' + rightText;
+          return 'שני מיליארד' + ' ו' + rightText;
         } else {
           return __translate(leftNum,false) + ' מיליארד'+ ' ו' + rightText;
         }
